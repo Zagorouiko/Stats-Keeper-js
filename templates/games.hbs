@@ -1,0 +1,8 @@
+<h1>Games</h1>
+
+{{#each game in this}}
+  <p>{{#link-to 'game' game.id}}{{game.name}}{{/link-to}}</p>
+{{/each}}
+
+{{#link-to 'new-game'}}Add a new Game:{{/link-to}}
+{{outlet}}

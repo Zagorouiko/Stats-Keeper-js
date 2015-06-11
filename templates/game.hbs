@@ -1,0 +1,8 @@
+<h1>Game</h1>
+<h2>{{model.name}}</h2>
+<h3>{{model.teamName}}</h3>
+{{#link-to 'new-team'}}Add a new Team:{{/link-to}}
+{{#each team in this.teams}}
+  {{team.teamName}}
+  {{/each}}
+{{outlet}}
